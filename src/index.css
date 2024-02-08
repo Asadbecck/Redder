@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type='text']:focus~.input-text-custom {
+  @apply text-[#FAAD52] bg-[#000300] transform -translate-y-5 -translate-x-4 scale-75
+}
+
+input[type='text']:focus~.input-text-custom-sec {
+  @apply text-[#FAAD52] bg-[#2C2D2F] transform -translate-y-2 translate-x-1 scale-75
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000300;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.scrol::-webkit-scrollbar {
+  width: 0;
+}
